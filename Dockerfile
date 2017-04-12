@@ -2,9 +2,9 @@ FROM ubuntu:16.04
 
 RUN  apt-get update 
     
-RUN  apt-get install -y --no-install-recommends \
+RUN  apt-get install -y \
          python2.7 python-pip python-pkg-resources\
-         openssl \
+         openssl python-openssl\
          zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
