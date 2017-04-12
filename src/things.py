@@ -80,7 +80,8 @@ MOLqy8HSnoMOLmluvSnMrW6hRANCAATuErpKeqT3iLekbq/dch2kAQKXgRAJ7Dgs
         return m
 
     def __encode_to_fix_str(self, m):
-        fix_str = "TLS.account_type:" + m["TLS.account_type"] + "\n" \
+        fix_str =  "TLS.appid_at_3rd:"+m["TLS.appid_at_3rd"]+"\n" \
+                  + "TLS.account_type:" + m["TLS.account_type"] + "\n" \
                   + "TLS.identifier:" + m["TLS.identifier"] + "\n" \
                   + "TLS.sdk_appid:" + m["TLS.sdk_appid"] + "\n" \
                   + "TLS.time:" + m["TLS.time"] + "\n" \
