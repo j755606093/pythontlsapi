@@ -1,6 +1,10 @@
-FROM python:2.7.9
+FROM python:2.7.13
 
 ADD . /project
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends libssl-dev \
+                    openssl \
+                    zlib1g 
 RUN pip install --upgrade pip
 RUN chmod a+x /project/src/run.sh
 EXPOSE 8000
