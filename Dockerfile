@@ -4,6 +4,7 @@ ADD . /project
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends libssl-dev \
                     openssl \
+                    python-openssl \
                     zlib1g 
 RUN pip install --upgrade pip
 RUN chmod a+x /project/src/run.sh
