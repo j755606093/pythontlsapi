@@ -2,8 +2,13 @@ FROM python:2.7.13
 
 RUN apt-get update 
 RUN apt-get install -y --no-install-recommends \
+       libssl-dev \
+       libffi-dev \
+       libffi-dev \
        openssl  \
-       zlib1g-dev  \
+       cmake \
+        gcc \
+        libhttp-parser-dev \
     && rm -rf /var/lib/apt/lists/*
 
 ADD . /project
