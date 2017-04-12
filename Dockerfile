@@ -1,10 +1,10 @@
-FROM python:2.7.13
+FROM ubuntu:16.04
 
-RUN apt-get update 
-RUN apt-get install sudo -y
+RUN sudo apt-get update 
 RUN sudo apt-get install -y --no-install-recommends \
-        build-essential libssl-dev libffi-dev python-dev \
-        Python-openssl \
+         python python-dev python-pip \
+         openssl \
+         zlib1g-dev \
     && rm -rf /var/lib/apt/lists/*
 
 ADD . /project
