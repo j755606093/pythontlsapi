@@ -47,6 +47,9 @@ class TLSSigAPI:
     __version = 20170410
     __expire = 3600 * 24 * 30        # 默认一个月，需要调整请自行修改
     __pri_key = """
+-----BEGIN EC PARAMETERS-----
+BgUrgQQACg==
+-----END EC PARAMETERS-----
 -----BEGIN EC PRIVATE KEY-----
 MHQCAQEEINH+ISTnItMJaNVQmXQV/TDi6svB0p6DDi5pbr0pzK1uoAcGBSuBBAAK
 oUQDQgAE7hK6Snqk94i3pG6v3XIdpAECl4EQCew4LPOpRIpjvWrZ2xXuKMiWAMlm
